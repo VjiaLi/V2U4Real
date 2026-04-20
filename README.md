@@ -45,7 +45,7 @@
 
 ## News
 
-- **[2026.02]** V2U4Real is accepted to **CVPR 2026** :boom: :boom: :boom:.
+- **[2026.02]** V2U4Real is accepted to **CVPR 2026**:boom::boom::boom:.
 - **[2026.04]** Codebase will be released.
 - **[2026.06]** Dataset download links will be released.
 
