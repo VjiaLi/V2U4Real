@@ -2,9 +2,9 @@
   <h1 align="center">V2U4Real: A Real-world Large-scale Dataset for Vehicle-to-UAV Cooperative Perception</h1>
   <p align="center">
     <a href="https://scholar.google.com/citations?user=lrF4Nx8AAAAJ&hl=zh-CN">Weijia Li</a>,
-    <a href="">Haoen Xiang</a>,
-    <a href="">Tianxu Wang</a>,
-    <a href="">Shuaibing Wu</a>,
+    <a href="https://github.com/VjiaLi/V2U4Real">Haoen Xiang</a>,
+    <a href="https://github.com/VjiaLi/V2U4Real">Tianxu Wang</a>,
+    <a href="https://github.com/VjiaLi/V2U4Real">Shuaibing Wu</a>,
     <a href="https://scholar.google.com/citations?user=A6spPv_n5qUC&hl=zh-CN&oi=sra">Qiming Xia</a>,
     <a href="https://scholar.google.com/citations?user=kAnv3SkAAAAJ&hl=zh-CN">Cheng Wang</a>,
     <a href="https://scholar.google.com/citations?user=JOoZUmUAAAAJ&hl=zh-CN&oi=sra">Chenglu Wen</a>
