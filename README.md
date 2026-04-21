@@ -49,7 +49,7 @@
 - **[2026.04]** Codebase will be released.
 - **[2026.06]** Dataset download links will be released.
 
-> All dataset files will be released after the conference. More stars ⭐ on this repository will help accelerate the release.
+> All dataset files will be released before the conference. More stars ⭐ on this repository will help accelerate the release.
 
 
 ## TODO
