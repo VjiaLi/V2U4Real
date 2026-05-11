@@ -1,0 +1,18 @@
+# Install PyTorch and spconv separately according to your CUDA version.
+cmake==3.22.6
+easydict==1.9
+numpy==1.18.5
+numba==0.49.0
+opencv-python==4.5.5.62
+matplotlib==3.4.2
+scipy==1.5.4
+scikit-image==0.18.3
+tqdm==4.64.1
+PyYAML==5.4.1
+open3d==0.13.0
+cython==0.29.36
+tensorboardX==2.5.1
+shapely==2.0.0
+einops==0.4.1
+timm==0.6.13
+h5py==3.7.0

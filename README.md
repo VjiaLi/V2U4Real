@@ -46,7 +46,7 @@
 ## News
 
 - **[2026.02]** V2U4Real is accepted to **CVPR 2026**:boom::boom::boom:.
-- **[2026.04]** Codebase will be released.
+- **[2026.05]** Codebase is released.
 - **[2026.06]** Dataset download links will be released.
 
 > All dataset files will be released before the conference. More stars ⭐ on this repository will help accelerate the release.
@@ -54,11 +54,11 @@
 
 ## TODO
 
-- [ ] Release training and inference code
-- [ ] Release dataset download links
+- [x] Release training and inference code
 - [ ] Release pretrained models
 - [ ] Release detailed documentation
 - [ ] Release benchmark leaderboard
+- [ ] Release dataset download links
 
 ## Installation
 ### 1. Clone the repository
@@ -145,7 +145,7 @@ After downloading the data, please put the data in the following structure:
 ### Data sequence visualization
 To quickly visualize the LiDAR stream in the V2U4Real dataset, first modify the `validate_dir`
 in your `opencood/hypes_yaml/visualization.yaml` to the v2u4real data path on your local machine, e.g. `v2u4real/val`,
-and the run the following commond:
+and then run the following command:
 ```python
 cd ~/V2U4Real
 python opencood/visualization/vis_data_sequence.py [--color_mode ${COLOR_RENDERING_MODE}]
@@ -156,7 +156,7 @@ Arguments Explanation:
 
 ### Train your model
 V2U4Real uses yaml file to configure all the parameters for training. To train your own model
-from scratch or a continued checkpoint, run the following commonds:
+from scratch or a continued checkpoint, run the following command:
 ```python
 python opencood/tools/train.py --hypes_yaml ${CONFIG_FILE} [--model_dir  ${CHECKPOINT_FOLDER} --half]
 ```
@@ -165,7 +165,7 @@ Arguments Explanation:
 an early fusion model which utilizes Pointpillar as the backbone.
 - `model_dir` (optional) : the path of the checkpoints. This is used to fine-tune the trained models. When the `model_dir` is
 given, the trainer will discard the `hypes_yaml` and load the `config.yaml` in the checkpoint folder.
-- `half` (optional): If set, the model will be trained with half precision. It cannot be set with multi-gpu training togetger.
+- `half` (optional): If set, the model will be trained with half precision. It cannot be set together with multi-gpu training.
 
 To train on **multiple gpus**, run the following command:
 ```
@@ -203,6 +203,6 @@ If you find this dataset or code useful in your research, please consider citing
 ```
 
 ## Acknowledgements
-Thank for the excellent cooperative perception dataset [OPV2V](https://mobility-lab.seas.ucla.edu/opv2v/) and [V2V4Real](https://github.com/ucla-mobility/V2V4Real).
+Thanks for the excellent cooperative perception datasets [OPV2V](https://mobility-lab.seas.ucla.edu/opv2v/) and [V2V4Real](https://github.com/ucla-mobility/V2V4Real).
 
-Thank for the dataset and code support by [DerrickXu](https://github.com/DerrickXuNu).
+Thanks for the dataset and code support from [DerrickXu](https://github.com/DerrickXuNu).
