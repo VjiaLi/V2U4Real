@@ -55,9 +55,9 @@
 ## TODO
 
 - [x] Release training and inference code
-- [ ] Release pretrained models
+- [x] Release pretrained models
+- [x] Release benchmark leaderboard
 - [ ] Release detailed documentation
-- [ ] Release benchmark leaderboard
 - [ ] Release dataset download links
 
 ## Installation
@@ -189,7 +189,37 @@ Arguments Explanation:
 The evaluation results  will be dumped in the model directory. 
 
 ## Benchmark and Model Zoo
-Benchmark results and pretrained models will be released soon.
+### Results of Cooperative 3D object detection
+| Method        | Backbone    | Sync AP@0.5 | Sync AP@0.7 | Async AP@0.5 | Async AP@0.7 | Bandwidth | Download Link                                                            |
+|--------------|-------------|----------------|----------------|--------------|--------------|-----------|--------------------------------------------------------------------------|
+| Late Fusion  | PointPillar | 43.53           |   21.46    |  24.36       | 9.88         |      0.009     |        [google-drive](https://drive.google.com/drive/folders/1ojZE-o_EGa1-KTr8ic-EvM7xDuquHpu0?usp=drive_link)                                                                  |
+| Early Fusion | PointPillar  | 51.31         | 27.74         | 30.94        | 13.99      |      3.18     |         [google-drive](https://drive.google.com/drive/folders/1-lBTw0oMd6-S1sV-SLTuCgmW8CSl-eDD?usp=drive_link)              |
+| [Where2Comm](https://arxiv.org/abs/2209.12836) | PointPillar | 53.85         | 29.71         | 48.99        | 28.36       |      0.65     |     [google-drive](https://drive.google.com/drive/folders/1OEM_tprtb2J_O4VRkFJ5v0kla_KPPwRP?usp=drive_link)                                                                    |
+| [AttFuse](https://arxiv.org/abs/2109.07644)     | PointPillar | 50.20         | 27.33          | 40.51        | 21.92      |     0.65      |      [google-drive](https://drive.google.com/drive/folders/15nE5vHkaxTV-RQDtO75RSIAasMlcHZtV?usp=drive_link)                                                       |
+| [V2X-ViT](https://arxiv.org/pdf/2203.10638.pdf)         |PointPillar | 45.51         | 25.99          | 45.74       | 26.00     |     0.65      |     [google-drive](https://drive.google.com/drive/folders/1a_Xeje60e2lJXKbOr_SzsXhywDRDHMtJ?usp=drive_link)                                                                  |
+| [CoBEVT](https://arxiv.org/abs/2207.02202)    | PointPillar | 41.99          | 22.38          | 31.47       | 16.05      |   0.65        | [google-drive](https://drive.google.com/drive/folders/1hHYqThIru-Tnw1_CEn9OEAB-nuev0RV1?usp=drive_link)
+| [CoAlign](https://arxiv.org/abs/2211.07214)      | PointPillar |    **56.67**     |  **36.61**   | **50.81**  | **33.33**  | 0.65| [google-drive](https://drive.google.com/drive/folders/1h5121PKO8Aljg0ozwHSFqi-kr5tO8B38?usp=drive_link)|
+| [ERMVP](https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_ERMVP_Communication-Efficient_and_Collaboration-Robust_Multi-Vehicle_Perception_in_Challenging_Environments_CVPR_2024_paper.pdf)      | PointPillar |    45.56     |  22.64  | 28.06  | 14.22  | 0.65| [google-drive](https://drive.google.com/drive/folders/1BS4EOHv9mMFFU04zDDl70hyNWJRl6Jl3?usp=drive_link)|
+| [DSRC](https://arxiv.org/abs/2412.10739)      | PointPillar |    54.64     |  31.77   | 47.63  | 26.05  | 0.65| [google-drive](https://drive.google.com/drive/folders/1SfW63JP1WqUgCi2g-KEOokevuxZ3chn_?usp=drive_link)|
+| No Fusion (Vehicle only)    | PointPillar | 27.53          | 12.75          | 27.53          | 12.75          |      0.0     |                                                                      |
+| No Fusion (UAV only)   | PointPillar | 32.44           | 14.31          | 39.8          | 22.0          |      0.0     |                                                                      |
+
+### Results of Cooperative tracking
+
+| Method | AMOTA(↑) | AMOTP(↑) | sAMOTA(↑) | MOTA(↑) | MOTP(↑) | MT(↑) | ML(↓) |
+|--------|----------|----------|-----------|---------|---------|-------|-------|
+| Early Fusion | 19.22 | 39.41 | 56.79 | 59.26 | 64.67 | 67.94 | 23.81 |
+| Late Fusion | 14.82 | 34.39 | 51.12 | 50.64 | 64.90 | 48.41 | 37.30 |
+| AttFuse | 20.98 | 41.31 | **61.55** | 60.40 | 64.89 | 57.94 | 23.81 |
+| Where2comm | 20.07 | 41.49 | 58.52 | 62.07 | 63.04 | 65.08 | 15.87 |
+| V2X-ViT | 14.74 | 35.25 | 50.38 | 50.76 | 64.76 | 57.94 | 30.16 |
+| CoBEVT | 15.96 | 36.53 | 52.62 | 53.60 | 64.54 | 51.59 | 35.71 |
+| CoAlign | **22.08** | **43.11** | 59.03 | **63.49** | **65.43** | 69.05 | 14.29 |
+| ERMVP | 19.02 | 37.42 | 56.82 | 58.27 | 63.31 | 35.71 | 49.21 |
+| DSRC | 18.67 | 39.72 | 53.20 | 59.74 | 65.03 | **73.02** | **13.49** |
+| No Fusion (Vehicle only) | 11.73 | 25.84 | 46.56 | 45.33 | 44.59 | 34.13 | 52.38 |
+| No Fusion (UAV only)  | 7.00 | 21.58 | 33.56 | 35.72 | 55.40 | 3.17 | 81.75 |
+
 
 ## Citation
 If you find this dataset or code useful in your research, please consider citing our paper.
