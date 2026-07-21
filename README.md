@@ -26,7 +26,7 @@
   <a href="https://github.com/VjiaLi/V2U4Real">
     <img src="https://img.shields.io/badge/Project-Page-blue.svg" alt="Project Page">
   </a>
-  <a href="https://github.com/VjiaLi/V2U4Real">
+  <a href="https://huggingface.co/datasets/VJiaLi/V2U4Real/tree/main">
     <img src="https://img.shields.io/badge/Dataset-Hugging%20Face-yellow.svg" alt="Dataset">
   </a>
   <a href="#citation">
@@ -49,16 +49,12 @@
 - **[2026.05]** Codebase is released.
 - **[2026.06]** Dataset download links will be released.
 
-> All dataset files will be released before the conference. More stars ⭐ on this repository will help accelerate the release.
-
-
 ## TODO
 
 - [x] Release training and inference code
 - [x] Release pretrained models
 - [x] Release benchmark leaderboard
-- [ ] Release detailed documentation
-- [ ] Release dataset download links
+- [x] Release dataset download links
 
 ## Installation
 ### 1. Clone the repository
@@ -100,7 +96,7 @@ pip install spconv-cu113
   ```
 
 ## Data Download
-Please check our [website]('https://github.com/VjiaLi/V2U4Real') to download the data.
+Please check [Hugging Face](https://huggingface.co/datasets/VJiaLi/V2U4Real/tree/main) to download the data.
 
 After downloading the data, please put the data in the following structure:
 ```shell
@@ -224,10 +220,11 @@ The evaluation results  will be dumped in the model directory.
 ## Citation
 If you find this dataset or code useful in your research, please consider citing our paper.
 ```bash
-@article{li2026v2u4real,
+@inproceedings{li2026v2u4real,
   title={V2U4Real: A Real-world Large-scale Dataset for Vehicle-to-UAV Cooperative Perception},
   author={Li, Weijia and Xiang, Haoen and Wang, Tianxu and Wu, Shuaibing and Xia, Qiming and Wang, Cheng and Wen, Chenglu},
-  journal={arXiv preprint arXiv:2603.25275},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4728--4737},
   year={2026}
 }
 ```
