@@ -47,7 +47,7 @@
 
 - **[2026.02]** V2U4Real is accepted to **CVPR 2026**:boom::boom::boom:.
 - **[2026.05]** Codebase is released.
-- **[2026.06]** Dataset download links will be released.
+- **[2026.07]** Dataset download links were released.
 
 ## TODO
 
