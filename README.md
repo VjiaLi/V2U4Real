@@ -17,25 +17,13 @@
 
 <div align="center">
   <img src="./images/teaser.png" alt="V2U4Real Teaser" width="100%">
-</div>
 
-<p align="center">
-  <a href="https://arxiv.org/abs/2603.25275">
-    <img src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg" alt="arXiv Paper">
-  </a>
-  <a href="https://github.com/VjiaLi/V2U4Real">
-    <img src="https://img.shields.io/badge/Project-Page-blue.svg" alt="Project Page">
-  </a>
-  <a href="https://huggingface.co/datasets/VJiaLi/V2U4Real/tree/main">
-    <img src="https://img.shields.io/badge/Dataset-Hugging%20Face-yellow.svg" alt="Dataset">
-  </a>
-  <a href="#citation">
-    <img src="https://img.shields.io/badge/Citation-BibTeX-green.svg" alt="Citation">
-  </a>
-  <a href="https://opensource.org/license/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-orange.svg" alt="License">
-  </a>
-</p>
+  [![arXiv Paper](https://img.shields.io/badge/arXiv-Paper-b31b1b.svg)](https://arxiv.org/abs/2603.25275)
+  [![CVPR Paper](https://img.shields.io/badge/CVPR-Paper-blue.svg)](https://openaccess.thecvf.com/content/CVPR2026/papers/Li_V2U4Real_A_Real-world_Large-scale_Dataset_for_Vehicle-to-UAV_Cooperative_Perception_CVPR_2026_paper.pdf)
+  [![Dataset](https://img.shields.io/badge/Hugging%20Face-Dataset-yellow.svg)](https://huggingface.co/datasets/VJiaLi/V2U4Real/tree/main)
+  [![Citation](https://img.shields.io/badge/Citation-BibTeX-green.svg)](#citation)
+  [![License](https://img.shields.io/badge/License-MIT-orange.svg)](https://opensource.org/license/MIT)
+</div>
 
 ## Dataset Demo
 <div align="center">
